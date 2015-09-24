@@ -56,6 +56,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EventArgs\LogItemEventArgs.cs" />
+    <Compile Include="LogTypeManager\FileCollectZipMgr.cs" />
+    <Compile Include="LogTypeManager\LogPathSetsMgr.cs" />
+    <Compile Include="EventArgs\ProcessBarEventArgs.cs" />
+    <Compile Include="LogTypeManager\MgrBase.cs" />
+    <Compile Include="Template\SingletonProvider.cs" />
+    <Compile Include="LogTypeManager\SystemEventLogMgr.cs" />
     <Compile Include="TypeDefine.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -96,6 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WPFControl\WPFControl.csproj">
+      <Project>{F89E0F82-B444-4680-A363-3405F9A78DFF}</Project>
+      <Name>WPFControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
